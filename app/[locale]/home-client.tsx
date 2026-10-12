@@ -124,20 +124,24 @@ function Hero() {
           </p>
 
           <div className="rise rise-4 mt-8 flex flex-wrap items-center gap-3">
-            <a href="#toolkit" className={btnPrimary}>
-              {d.home.ctaExplore}
-              <Icon icon="ph:arrow-down" className="size-4" />
-            </a>
-            <a
-              href={GITHUB_URL}
-              target="_blank"
-              rel="noreferrer"
-              className={btnGhost}
-            >
-              <Icon icon="ph:github-logo" className="size-4" />
-              {d.home.ctaGithub}
-            </a>
-          </div>
+  <a 
+    href="/downloads/Falah-windows.zip" 
+    download="Falah-windows.zip"
+    className={btnPrimary}
+  >
+    {d.home.ctaExplore}
+    <Icon icon="ph:download" className="size-4" />
+  </a>
+  <a
+    href={GITHUB_URL}
+    target="_blank"
+    rel="noreferrer"
+    className={btnGhost}
+  >
+    <Icon icon="ph:github-logo" className="size-4" />
+    {d.home.ctaGithub}
+  </a>
+</div>
 
           <div className="rise rise-4 mt-10">
             <HijriToday />
